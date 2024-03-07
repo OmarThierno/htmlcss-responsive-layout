@@ -92,6 +92,10 @@ main {
 }
 
 /* HERO  */
+#hero-section {
+  padding-bottom: 50px;
+}
+
 #hero-section .hero-col {
   width: 100%;
   background-color: #B5DDFF;
@@ -123,9 +127,36 @@ main {
   }
 }
 
-@media screen and (min-width: 992px) {
-  
+/* STATEGIC PLANNING  */
+#strategic-planning {
+  background-color: #9792E4;
+  padding: 40px 0;
 }
 
+#strategic-planning .stategic-col {
+  width: 100%;
+  margin-bottom: 20px;
+
+  /* debug  */
+  height: 300px;
+  border: 1px solid black;
+}
+
+@media screen and (min-width: 992px) {
+  .container-small {
+    width: 70%;
+    max-width: 900px;
+  }
+
+  #strategic-planning .container-small {
+    display: flex;
+  }
+
+  #strategic-planning .stategic-col {
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+}
 
 
