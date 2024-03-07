@@ -88,7 +88,7 @@ header {
 
 /* MAIN  */
 main {
-  padding: 100px 0;
+  padding-top: 100px;
 }
 
 /* HERO  */
@@ -130,7 +130,8 @@ main {
 /* STATEGIC PLANNING  */
 #strategic-planning {
   background-color: #9792E4;
-  padding: 40px 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 #strategic-planning .stategic-col {
@@ -161,7 +162,8 @@ main {
 
 /* PARTNERS  */
 #partners {
-  padding: 40px 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .partners-header {
@@ -182,7 +184,8 @@ main {
 /* Benefit of working section */
 #benefit {
   background-color: #9792E4;
-  padding: 40px 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 #benefit h2 {
@@ -215,4 +218,61 @@ main {
   #benefit .benefit-col {
     width: calc(100% / 3 - 40px / 3);
   }
+}
+
+/* About us section */
+#about-us {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#about-us .about-us-col {
+  width: 100%;
+  /* debug */
+  height: 400px;
+  background-color: darkslateblue;
+  border: 1px solid black;
+}
+
+@media screen and (min-width: 768px) {
+  #about-us {
+    display: flex;
+  }
+
+  #about-us .about-us-col:first-child {
+    width: 60%;
+  }
+
+  #about-us .about-us-col:last-child {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #about-us .about-us-col:first-child {
+    width: 70%;
+  }
+
+  #about-us .about-us-col:last-child {
+    width: 30%;
+  }
+}
+
+
+/* CAll To Action */
+#call-to-action {
+  background-color: #9792E4;
+}
+
+#call-to-action div {
+  /* debug  */
+  height: 500px;
+}
+
+/* FOOTER  */
+footer {
+  background-color: #333333;
+
+  /* debug */
+  height: 400px;
 }
