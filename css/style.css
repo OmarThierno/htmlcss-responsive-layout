@@ -159,4 +159,60 @@ main {
 
 }
 
+/* PARTNERS  */
+#partners {
+  padding: 40px 0;
+}
 
+.partners-header {
+  /* debug */
+  height: 100px;
+  background-color: aquamarine;
+  border: 1px solid black;
+}
+
+#partners .partners-col {
+
+  /* debug  */
+  background-color: red;
+  height: 200px;
+  border: 1px solid black;
+}
+
+/* Benefit of working section */
+#benefit {
+  background-color: #9792E4;
+  padding: 40px 0;
+}
+
+#benefit h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#benefit .benefit-col {
+  width: 100%;
+  
+  /* debug */
+  background-color: burlywood;
+  height: 200px;
+  border: 1px solid black;
+}
+
+@media screen and (min-width: 768px) {
+  .columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  #benefit .benefit-col {
+    width: calc(50% - 20px / 2);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #benefit .benefit-col {
+    width: calc(100% / 3 - 40px / 3);
+  }
+}
