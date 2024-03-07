@@ -43,7 +43,7 @@ body {
   padding: 0 20px;
   margin: 0 auto;
   /* debug  */
-  height: 400px;
+  /* height: 400px; */
 }
 
 .container-big {
@@ -84,9 +84,48 @@ header {
   .humburger-menu {
     display: none;
   }
-  
 }
 
+/* MAIN  */
+main {
+  padding: 100px 0;
+}
+
+/* HERO  */
+#hero-section .hero-col {
+  width: 100%;
+  background-color: #B5DDFF;
+  margin-bottom: 20px;
+
+  /* debug */
+  height: 200px;
+  border: 1px solid black;
+}
+
+@media screen and (min-width: 768px) {
+  #hero-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  #hero-section .hero-col {
+    margin-bottom: 0;
+  }
+
+  #hero-section .hero-col:first-child {
+    width: calc(100% * 2/3 - 20px / 2);
+  }
+
+  #hero-section .hero-col {
+    width: calc(100% / 3 - 40px / 3);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  
+}
 
 
 
