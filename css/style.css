@@ -36,6 +36,12 @@ body {
   justify-content: space-between;
 }
 
+.btn {
+  background-color: white;
+  padding: 10px 20px ;
+  border-radius: 20px;
+}
+
 /* Layout  */
 .container-big,
 .container-small {
@@ -57,18 +63,48 @@ body {
 /* HEADER  */
 header {
   background-color: #0084FD;
-  color: white;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  height: 80px;
-  line-height: 80px;
+  height: 60px;
+  line-height: 60px;
   z-index: 10;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
 }
 
 .nav-list {
   display: none;
+}
+
+.nav-list ul {
+  gap: 20px;
+  color: rgb(228, 227, 227);
+}
+
+.nav-list ul li:last-child {
+  color: black;
+}
+
+.nav-list ul li:hover {
+  border-bottom: 2px solid #6500fd;
+  color: white;
+}
+
+.nav-list ul li:last-child:hover {
+  border-bottom: 0;
+  color: black;
+}
+
+.humburger-menu button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 2rem;
 }
 
 @media screen and (min-width: 992px) {
@@ -119,7 +155,7 @@ main {
   }
 
   #hero-section .hero-col:first-child {
-    width: calc(100% * 2/3 - 20px / 2);
+    width: calc(100% * 2/3 - 20px / 3);
   }
 
   #hero-section .hero-col {
