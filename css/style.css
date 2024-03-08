@@ -1,3 +1,8 @@
+:root {
+  --blue-color: #0084FD;
+  --viole-color: #9792E4;
+}
+
 /* RESERT  */
 * {
   margin: 0;
@@ -60,23 +65,26 @@ body {
   padding-right: 50px;
 }
 
+.bg-blue {
+  background-color: var(--blue-color);
+}
+
+.bg-viole {
+  background-color: var(--viole-color);
+}
+
 /* Layout  */
 .container-big,
 .container-small {
   width: 100%;
   padding: 0 20px;
   margin: 0 auto;
-  /* debug  */
-  /* height: 400px; */
-}
 
-.container-small {
-  background-color: aquamarine;
 }
 
 /* HEADER  */
 #header {
-  background-color: #0084FD;
+  background-color: var(--blue-color);
   position: fixed;
   top: 0;
   left: 0;
@@ -156,7 +164,7 @@ main {
 
 .header-card h3,
 .header-card i {
-  color: #0084FD;
+  color: var(--blue-color);
   margin-bottom: 20px;
 }
 
@@ -219,15 +227,32 @@ main {
   background-color: #9792E4;
   padding-top: 40px;
   padding-bottom: 40px;
+  color: white;
 }
 
 #strategic-planning .stategic-col {
   width: 100%;
   margin-bottom: 20px;
+}
 
-  /* debug  */
-  height: 300px;
-  border: 1px solid black;
+#strategic-planning .stategic-col h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+#strategic-planning .stategic-col:last-child {
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+  color: black;
+}
+
+.stategic-col.text-center a {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  line-height: 30px;
+  margin-top: 20px;
 }
 
 @media screen and (min-width: 992px) {
@@ -238,13 +263,19 @@ main {
 
   #strategic-planning .container-small {
     display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
   }
 
-  #strategic-planning .stategic-col {
-    width: 50%;
+  #strategic-planning .stategic-col:first-child {
+    width: 58%;
     margin-bottom: 0;
   }
 
+  #strategic-planning .stategic-col:last-child {
+    width: 40%;
+    margin-bottom: 0;
+  }
 }
 
 /* PARTNERS  */
