@@ -28,6 +28,10 @@ body {
   display: inline-block;
 }
 
+.disp-block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
@@ -36,10 +40,24 @@ body {
   justify-content: space-between;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .btn {
   background-color: white;
   padding: 10px 20px ;
   border-radius: 20px;
+}
+
+.mrg-25px {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.p-l-r-50px {
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 /* Layout  */
@@ -52,16 +70,12 @@ body {
   /* height: 400px; */
 }
 
-.container-big {
-  /* background-color: lightcoral; */
-}
-
 .container-small {
   background-color: aquamarine;
 }
 
 /* HEADER  */
-header {
+#header {
   background-color: #0084FD;
   position: fixed;
   top: 0;
@@ -128,39 +142,76 @@ main {
 }
 
 /* HERO  */
-#hero-section {
+#hero {
   padding-bottom: 50px;
 }
 
-#hero-section .hero-col {
+#hero .hero-col {
   width: 100%;
   background-color: #B5DDFF;
   margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 20px;
+}
 
-  /* debug */
-  height: 200px;
-  border: 1px solid black;
+.header-card h3,
+.header-card i {
+  color: #0084FD;
+  margin-bottom: 20px;
+}
+
+#hero h3 {
+  font-size: 2rem;
+}
+
+#hero .header-card i {
+  font-size: 3rem;
+}
+
+#hero .main-card div:last-child {
+  position: relative;
+  bottom: -20px;
+}
+
+.card-hero-img {
+  width: 250px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
-  #hero-section {
+  #hero {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
   }
 
-  #hero-section .hero-col {
+  #hero .hero-col {
     margin-bottom: 0;
   }
 
-  #hero-section .hero-col:first-child {
+  #hero .hero-col:first-child {
     width: calc(100% * 2/3 - 20px / 3);
   }
 
-  #hero-section .hero-col {
+  #hero .hero-col {
     width: calc(100% / 3 - 40px / 3);
   }
+
+  .card-hero-img {
+  margin-left: 30px;
+}
+}
+
+@media screen and (min-width: 992px) {
+  .main-card {
+    display: flex;
+  }
+
+  #hero .main-card div {
+    width: 50%;
+  }
+
 }
 
 /* STATEGIC PLANNING  */
