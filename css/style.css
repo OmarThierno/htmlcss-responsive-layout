@@ -282,21 +282,56 @@ main {
 #partners {
   padding-top: 40px;
   padding-bottom: 40px;
+  text-align: center;
 }
 
-.partners-header {
-  /* debug */
-  height: 100px;
-  background-color: aquamarine;
-  border: 1px solid black;
+.partners-header,
+.partners-header > * {
+  margin-bottom: 20px;
+}
+
+.partners-header h2 {
+  color: var(--viole-color);
+  font-size: 2rem;
 }
 
 #partners .partners-col {
+  background-color: var(--viole-color);
+  padding: 20px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  color: white;
+}
 
-  /* debug  */
-  background-color: red;
-  height: 200px;
-  border: 1px solid black;
+#partners .partners-col .partners-img > *,
+#partners .partners-col .partners-main-col > *{
+  margin-bottom: 20px;
+}
+
+.img-profile-partners {
+  width: 300px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  #partners .partners-col {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #partners .partners-col .partners-img .img-profile-partners {
+    width: 350px;
+    aspect-ratio: 1;
+    margin-bottom: 0;
+  }
+
+  #partners .partners-col .partners-main-col .name-partners{
+    margin-bottom: 0;
+  }
+  
 }
 
 /* Benefit of working section */
