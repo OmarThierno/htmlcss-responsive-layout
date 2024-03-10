@@ -1,6 +1,9 @@
 :root {
   --blue-color: #0084FD;
+  --lightblue-color: #B5DDFF;
   --viole-color: #9792E4;
+  --white-color: white;
+  --black-color: #333333;
 }
 
 /* RESERT  */
@@ -54,7 +57,7 @@ body {
 }
 
 .btn {
-  background-color: white;
+  background-color: var(--white-color);
   padding: 10px 20px ;
   border-radius: 20px;
 }
@@ -91,7 +94,7 @@ body {
 }
 
 .color-white {
-  color: white;
+  color: var(--white-color);
 }
 
 /* Layout  */
@@ -136,7 +139,7 @@ body {
 
 .nav-list ul li:hover {
   border-bottom: 2px solid #6500fd;
-  color: white;
+  color: var(--white-color);
 }
 
 .nav-list ul li:last-child:hover {
@@ -147,7 +150,7 @@ body {
 .humburger-menu button {
   background-color: transparent;
   border: none;
-  color: white;
+  color: var(--white-color);
   font-size: 2rem;
 }
 
@@ -178,7 +181,7 @@ main {
 
 #hero .hero-col {
   width: 100%;
-  background-color: #B5DDFF;
+  background-color: var(--lightblue-color);
   margin-bottom: 20px;
   border-radius: 10px;
   padding: 20px;
@@ -246,10 +249,8 @@ main {
 
 /* STATEGIC PLANNING  */
 #strategic-planning {
-  background-color: #9792E4;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  color: white;
+  background-color: var(--viole-color);
+  color: var(--white-color);
 }
 
 #strategic-planning .stategic-col {
@@ -263,7 +264,7 @@ main {
 }
 
 #strategic-planning .stategic-col:last-child {
-  background-color: white;
+  background-color: var(--white-color);
   border-radius: 20px;
   padding: 30px;
   color: black;
@@ -302,8 +303,6 @@ main {
 
 /* PARTNERS  */
 #partners {
-  padding-top: 40px;
-  padding-bottom: 40px;
   text-align: center;
 }
 
@@ -322,7 +321,7 @@ main {
   padding: 20px;
   border-radius: 30px;
   margin-bottom: 20px;
-  color: white;
+  color: var(--white-color);
 }
 
 #partners .partners-col .partners-img > *,
@@ -359,13 +358,11 @@ main {
 /* Benefit of working section */
 #benefit {
   background-color: #9792E4;
-  padding-top: 40px;
-  padding-bottom: 40px;
 }
 
 #benefit .container-big > h2 {
   font-size: 4rem;
-  color: white;
+  color: var(--white-color);
   margin-bottom: 40px;
 }
 
@@ -376,7 +373,7 @@ main {
 
 #benefit .benefit-col {
   width: 100%;
-  background-color: white;
+  background-color: var(--white-color);
   padding: 40px;
   margin-bottom: 20px;
   border-radius: 10px;
@@ -424,11 +421,6 @@ main {
 }
 
 /* About us section */
-#about-us {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
 #about-us .about-us-col {
   width: 100%;
 }
@@ -503,8 +495,8 @@ main {
 
 /* CAll To Action */
 #call-to-action {
-  background-color: #9792E4;
-  color: white;
+  background-color: var(--viole-color);
+  color: var(--white-color);
 }
 
 #call-to-action h2 {
@@ -534,8 +526,8 @@ main {
 
 /* FOOTER  */
 footer {
-  background-color: #333333;
-  color: white;
+  background-color: var(--black-color);
+  color: var(--viole-color);
 }
 
 footer p:first-child {

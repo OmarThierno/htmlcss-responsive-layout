@@ -1,0 +1,13 @@
+:root {
+  --blue-color: rgb(0, 142, 111);
+  --lightblue-color: #9792E4;
+  --viole-color: #B5DDFF;
+  --white-color: #333333;
+  --black-color: white;
+}
+
+body {
+  color: #fff;
+  background-color: black;
+}
+
